@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #f4f4f4, #e0e0e0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image:url(https://img.freepik.com/free-vector/gorgeous-clouds-background-with-blue-sky-design_1017-25501.jpg);
+    background-size: cover;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+}
+
+.search-card {
+    margin-bottom: 20px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+}
+
+.search input[type="text"] {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.search button {
+    padding: 12px 24px;
+    background: linear-gradient(to right, #007BFF, #0056b3);
+    color: #ffffff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.search button:hover {
+    background-color: #0056b3;
+}
+
+.weather {
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 8px;
+    background-color: #ffffff;
+    margin: 20px auto;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.weather:hover {
+    transform: scale(1.05);
+}
+
+.weather h1 {
+    margin: 15px 0;
+    font-size: 2em;
+    font-weight: 600;
+    color: #333;
+}
+
+#city {
+    color: #007BFF;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+#temp {
+    color: #ff9800;
+    font-size: 2.5em;
+}
+
+#weatherType {
+    color: #4caf50;
+    font-size: 1.8em;
+}
+
+#weather_when {
+    color: #f44336;
+    font-size: 1.5em;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 30px;
+    }
+
+    .search {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search input[type="text"] {
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+
+    .search button {
+        border-radius: 4px;
+        margin-top: 10px;
+    }
+
+    .weather {
+        margin: 20px;
+    }
+}
